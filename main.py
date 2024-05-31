@@ -16,17 +16,17 @@ with col2:
     st.title("Convenience Tinashe Chibatamoto")
     content = """
     Hello there! My name is Convenience, and I'm a software engineer, Python programmer and data science enthusiast. It's a pleasure to meet you.
-
+    
     I've been working with Python for the past 3 years, and I've grown to absolutely love this versatile and powerful programming language. What drew me to Python initially was its brevity and readability – the code just seems to flow naturally, which makes it a joy to work with. One of the things I enjoy most about being a Python programmer is the sense of community and collaboration. Python has a vibrant and supportive user base, and I've found that people are always willing to share their knowledge, contribute to open-source projects, and help each other grow. It's a truly rewarding experience to be a part of this dynamic ecosystem.
-
+    
     Over the years, I've had the opportunity to apply Python in a wide range of domains, from web development and data analysis to machine learning and automation. The rich ecosystem of libraries and frameworks, such as Django, NumPy, and TensorFlow, has been instrumental in helping me tackle complex problems and build robust, scalable applications.
     Below you can find some of the apps I have built in Python. Feel free to reach out anytime:
     
-- Email: conveniencechibatamoto@gmail.com
-- LinkedIn: https://www.linkedin.com/in/convenience-tinashe-chibatamoto
-- Github: https://github.com/convenience-tinashe-chibatamoto
-- Kaggle: https://www.kaggle.com/linedpenguin
-    """
+    - Email: conveniencechibatamoto@gmail.com
+    - LinkedIn: https://www.linkedin.com/in/convenience-tinashe-chibatamoto
+    - Github: https://github.com/convenience-tinashe-chibatamoto
+    - Kaggle: https://www.kaggle.com/linedpenguin
+        """
     st.info(content)
 
 col3, empty_col, col4 = st.columns([1.5, 0.5, 1.5])
