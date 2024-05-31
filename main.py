@@ -19,30 +19,33 @@ with col2:
     """
     st.info(content)
 
-content2 = """
-    As I continue on my journey as a software developer, I'm constantly amazed by the new possibilities that emerge. Whether I'm automating tedious tasks, building data-driven web applications, or exploring the frontiers of artificial intelligence, Python is usually the first door I knock to help me bring my ideas to life. If you're also a Python and data science enthusiast, I'd love to connect and discuss our shared passion in this space. Who knows, maybe we can even collaborate on a project or two down the line! Feel free to reach out anytime.
-    
-    Below you can find some of the apps I have built in Python. Feel free to contact me:
-    
-- Email: conveniencechibatamoto@gmail.com
-- LinkedIn: https://www.linkedin.com/in/convenience-tinashe-chibatamoto
-- Github: https://github.com/convenience-tinashe-chibatamoto
-- Kaggle: https://www.kaggle.com/linedpenguin
-"""
-st.write(content2)
+col3, col4 = st.columns([2, 1])
 
-col3, empty_col, col4 = st.columns([1.5, 0.5, 1.5])
+with col3:
+    content2 = """
+        As I continue on my journey as a software developer, I'm constantly amazed by the new possibilities that emerge. Whether I'm automating tedious tasks, building data-driven web applications, or exploring the frontiers of artificial intelligence, Python is usually the first door I knock to help me bring my ideas to life. If you're also a Python and data science enthusiast, I'd love to connect and discuss our shared passion in this space. Who knows, maybe we can even collaborate on a project or two down the line! Feel free to reach out anytime.
+        
+        Below you can find some of the apps I have built in Python. Feel free to contact me:
+        
+    - Email: conveniencechibatamoto@gmail.com
+    - LinkedIn: https://www.linkedin.com/in/convenience-tinashe-chibatamoto
+    - Github: https://github.com/convenience-tinashe-chibatamoto
+    - Kaggle: https://www.kaggle.com/linedpenguin
+    """
+    st.write(content2)
+
+col5, empty_col, col6 = st.columns([1.5, 0.5, 1.5])
 
 df = pd.read_csv("images/data.csv", sep=";")
 
-with col3:
+with col5:
     for index, row in df[:10].iterrows():
         st.header(row["title"])
         st.write(row["description"])
         st.image("images/" + row["image"])
         st.write("[View Source Code](https://github.com/convenience-tinashe-chibatamoto?tab=repositories)")
 
-with col4:
+with col6:
     for index, row in df[10:].iterrows():
         st.header(row["title"])
         st.write(row["description"])
