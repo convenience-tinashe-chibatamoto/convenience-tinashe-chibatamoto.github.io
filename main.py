@@ -7,7 +7,7 @@ col1, col2 = st.columns(2)
 col1, col2 = st.columns([0.5, 0.5])
 
 with col1:
-    st.image("images/photo.png")
+    #st.image("images/photo.png")
     content2 = """
 As I continue on my journey as a software developer, I'm constantly amazed by the new possibilities that emerge. Whether I'm automating tedious tasks, building data-driven web applications, or exploring the frontiers of artificial intelligence, Python is usually the first door I knock to help me bring my ideas to life. If you're also a Python and data science enthusiast, I'd love to connect and discuss our shared passion in this space. Who knows, maybe we can even collaborate on a project or two down the line! 
     
