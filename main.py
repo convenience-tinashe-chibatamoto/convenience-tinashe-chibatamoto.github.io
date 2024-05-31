@@ -3,7 +3,7 @@ import pandas as pd
 
 st.set_page_config(layout="wide")
 
-col1, col2 = st.columns(2)
+col1, col2 = st.columns([1, 2])
 
 with col1:
     st.image("images/photo.png")
@@ -15,7 +15,7 @@ with col2:
 
     I've been working with Python for the past 3 years, and I've grown to absolutely love this versatile and powerful programming language. What drew me to Python initially was its brevity and readability – the code just seems to flow naturally, which makes it a joy to work with. One of the things I enjoy most about being a Python programmer is the sense of community and collaboration. Python has a vibrant and supportive user base, and I've found that people are always willing to share their knowledge, contribute to open-source projects, and help each other grow. It's a truly rewarding experience to be a part of this dynamic ecosystem.
 
-    Over the years, I've had the opportunity to apply Python in a wide range of domains, from web development and data analysis to machine learning and automation. The rich ecosystem of libraries and frameworks, such as Django, NumPy, and TensorFlow, has been instrumental in helping me tackle complex problems and build robust, scalable applications. 
+    Over the years, I've had the opportunity to apply Python in a wide range of domains, from web development and data analysis to machine learning and automation. The rich ecosystem of libraries and frameworks, such as Django, NumPy, and TensorFlow, has been instrumental in helping me tackle complex problems and build robust, scalable applications.
     """
     st.info(content)
 
